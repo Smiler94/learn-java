@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array {
     public static void main(String args[]) {
         int size = 10;
@@ -7,6 +9,7 @@ public class Array {
         array.arrayValue(myList);
         array.arrayForeach(myList);
         array.arrayMulti();
+        array.arraySort();
     }
 
     private void arrayValue(double[] list) {
@@ -47,5 +50,14 @@ public class Array {
 
         System.out.print(a[0]);
 //        System.out.print(a[1]);
+    }
+
+    private void arraySort() {
+        int a[] = {8,5,3,1,4};
+
+        Arrays.sort(a);
+        for (int i : a) {
+            System.out.println(i);
+        }
     }
 }
