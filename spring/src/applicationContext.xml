@@ -21,9 +21,15 @@
         <property name="type" value="1"/>
     </bean>
 
+    <!--<bean id="personBean1" class="com.lz_java.core.Person">-->
+        <!--<property name="name" value="linzhen"/>-->
+        <!--<property name="address" value="nanjing"/>-->
+        <!--<property name="age" value="25"/>-->
+    <!--</bean>-->
+
     <bean id="personBean" class="com.lz_java.core.Person">
-        <property name="name" value="linzhen"/>
-        <property name="address" value="nanjing"/>
-        <property name="age" value="25"/>
+        <property name="name" value="linzhen2"/>
+        <property name="address" value="nanjing2"/>
+        <property name="age" value="23"/>
     </bean>
 </beans>

@@ -1,9 +1,11 @@
 package com.lz_java.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Customer {
     @Autowired
+//    @Qualifier("personBean2")   TODO qualifier 注解不起作用
     private Person person;
 
     private int type;
