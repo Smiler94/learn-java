@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="helloBean" class="com.lz_java.core.HelloWorld">
+        <property name="name" value="lz_java"/>
+    </bean>
+
+    <bean id="outputHelper" class="com.lz_java.core.OutputContainer">
+        <property name="outputGenerator" ref="csvOutputGenerator"/>
+    </bean>
+
+    <bean id="csvOutputGenerator" class="com.lz_java.core.CsvOutputGenerator"/>
+    <bean id="jsonOutputGenerator" class="com.lz_java.core.JsonOutputGenerator"/>
+</beans>
