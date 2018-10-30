@@ -32,4 +32,15 @@
         <property name="address" value="nanjing2"/>
         <property name="age" value="23"/>
     </bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+
+    <bean id="userService" class="com.lz_java.core.service.JdbcUserService">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
 </beans>
