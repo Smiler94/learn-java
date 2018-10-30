@@ -43,4 +43,12 @@
     <bean id="userService" class="com.lz_java.core.service.JdbcUserService">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+
+    <bean id="userTempService" class="com.lz_java.core.service.JdbcTemplateUserService">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="userDaoSupportService" class="com.lz_java.core.service.JdbcDaoSupportUserService">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
 </beans>
