@@ -6,4 +6,6 @@ public interface UserDao {
     public void insert(User user);
 
     public User findUserById(int id);
+
+    public User findUserById2(int id);
 }

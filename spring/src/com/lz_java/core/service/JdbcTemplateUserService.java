@@ -27,4 +27,9 @@ public class JdbcTemplateUserService implements UserDao {
     public User findUserById(int id) {
         return null;
     }
+
+    @Override
+    public User findUserById2(int id) {
+        return null;
+    }
 }

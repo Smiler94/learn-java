@@ -68,4 +68,9 @@ public class JdbcUserService implements UserDao{
             }
         }
     }
+
+    @Override
+    public User findUserById2(int id) {
+        return null;
+    }
 }

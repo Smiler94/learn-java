@@ -7,6 +7,8 @@ import com.lz_java.core.service.JdbcUserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.List;
+
 public class JdbcMain {
 //    public static void main(String[] args) {
 //        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -34,5 +36,14 @@ public class JdbcMain {
         JdbcDaoSupportUserService daoService = (JdbcDaoSupportUserService) ctx.getBean("userDaoSupportService");
         User user = daoService.findUserById(1);
         System.out.println(user);
+
+        User user2 = daoService.findUserById2(2);
+        System.out.println(user2);
+
+        List<User> users = daoService.findAll();
+        System.out.println(users);
+
+        String name = daoService.findNameById(1);
+        System.out.println(name);
     }
 }
