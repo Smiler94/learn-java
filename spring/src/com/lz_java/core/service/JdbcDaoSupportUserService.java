@@ -48,4 +48,13 @@ public class JdbcDaoSupportUserService extends JdbcDaoSupport implements UserDao
 
         return name;
     }
+
+    public int getTotal()
+    {
+        String sql = "select count(id) from user";
+
+        int count = getJdbcTemplate().queryForObject(sql, new Object[] {}, Integer.class);
+
+        return count;
+    }
 }

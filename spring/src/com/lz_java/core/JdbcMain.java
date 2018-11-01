@@ -45,5 +45,8 @@ public class JdbcMain {
 
         String name = daoService.findNameById(1);
         System.out.println(name);
+
+        int total = daoService.getTotal();
+        System.out.println(total);
     }
 }
