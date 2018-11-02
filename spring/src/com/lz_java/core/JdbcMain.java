@@ -7,6 +7,7 @@ import com.lz_java.core.service.JdbcUserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class JdbcMain {
@@ -30,23 +31,36 @@ public class JdbcMain {
 //        daoService.insert(user);
 //    }
 
+//    public static void main(String args[]) {
+//        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+//
+//        JdbcDaoSupportUserService daoService = (JdbcDaoSupportUserService) ctx.getBean("userDaoSupportService");
+//        User user = daoService.findUserById(1);
+//        System.out.println(user);
+//
+//        User user2 = daoService.findUserById2(2);
+//        System.out.println(user2);
+//
+//        List<User> users = daoService.findAll();
+//        System.out.println(users);
+//
+//        String name = daoService.findNameById(1);
+//        System.out.println(name);
+//
+//        int total = daoService.getTotal();
+//        System.out.println(total);
+//    }
+
     public static void main(String args[]) {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         JdbcDaoSupportUserService daoService = (JdbcDaoSupportUserService) ctx.getBean("userDaoSupportService");
-        User user = daoService.findUserById(1);
-        System.out.println(user);
 
-        User user2 = daoService.findUserById2(2);
-        System.out.println(user2);
+        List<User> users = new ArrayList<>();
+        users.add(new User("linzhen1", 22));
+        users.add(new User("linzhen2", 23));
+        users.add(new User("linzhen3", 24));
 
-        List<User> users = daoService.findAll();
-        System.out.println(users);
-
-        String name = daoService.findNameById(1);
-        System.out.println(name);
-
-        int total = daoService.getTotal();
-        System.out.println(total);
+        daoService.insertBatch(users);
     }
 }

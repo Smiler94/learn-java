@@ -1,6 +1,14 @@
 package com.lz_java.core.model;
 
 public class User {
+    public User() {
+
+    }
+    public User(String name, int age)
+    {
+        this.name = name;
+        this.age = age;
+    }
     private int id;
 
     private String name;

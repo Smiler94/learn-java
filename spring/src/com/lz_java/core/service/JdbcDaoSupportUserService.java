@@ -3,9 +3,12 @@ package com.lz_java.core.service;
 import com.lz_java.core.dao.UserDao;
 import com.lz_java.core.model.User;
 import com.lz_java.core.model.UserRowMapper;
+import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 
 public class JdbcDaoSupportUserService extends JdbcDaoSupport implements UserDao{
@@ -56,5 +59,23 @@ public class JdbcDaoSupportUserService extends JdbcDaoSupport implements UserDao
         int count = getJdbcTemplate().queryForObject(sql, new Object[] {}, Integer.class);
 
         return count;
+    }
+
+    public void insertBatch(final List<User> users) {
+        String sql = "insert into user (name, age ) values (? , ?)";
+
+        getJdbcTemplate().batchUpdate(sql, new BatchPreparedStatementSetter() {
+            @Override
+            public void setValues(PreparedStatement preparedStatement, int i) throws SQLException {
+                User user = users.get(i);
+                preparedStatement.setString(1, user.getName());
+                preparedStatement.setInt(2, user.getAge());
+            }
+
+            @Override
+            public int getBatchSize() {
+                return users.size();
+            }
+        });
     }
 }
