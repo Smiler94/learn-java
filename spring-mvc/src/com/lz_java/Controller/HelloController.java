@@ -1,4 +1,4 @@
-package com.lz_java.Controller;
+package com.lz_java.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
