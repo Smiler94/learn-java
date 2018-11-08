@@ -33,7 +33,7 @@ public class FileUploadController {
     {
         if (result.hasErrors()) {
             System.out.println("validation error");
-            return "fileUploadPage";
+            return "file/upload";
         } else {
             System.out.println("fetching file");
             MultipartFile multipartFile = file.getFile();

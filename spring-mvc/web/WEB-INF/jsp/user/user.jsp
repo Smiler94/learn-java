@@ -10,10 +10,24 @@
 <html>
 <head>
     <title>Spring MVC表单处理</title>
+    <style>
+        .error {
+            color: #ff0000;
+        }
+
+        .errorStyle {
+            color: #000;
+            background-color: #ffEEEE;
+            border: 3px solid #ff0000;
+            padding: 8px;
+            margin: 16px;
+        }
+    </style>
 </head>
 <body>
     <h2>User Information</h2>
-    <form:form method="POST" action="/user">
+    <form:form method="POST" action="/user" commandName="user">
+        <form:errors path="*" cssClass="errorStyle" element="div"/>
         <table>
             <tr>
                 <td><form:label path="id">编号：</form:label></td>
