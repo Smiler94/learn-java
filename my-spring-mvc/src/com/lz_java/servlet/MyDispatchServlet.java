@@ -2,6 +2,7 @@ package com.lz_java.servlet;
 
 import com.lz_java.annoation.MyController;
 import com.lz_java.annoation.MyRequestMapping;
+import com.lz_java.view.MyViewResolver;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
@@ -9,7 +10,10 @@ import org.dom4j.io.SAXReader;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.*;
@@ -20,6 +24,7 @@ public class MyDispatchServlet extends HttpServlet{
 
     private Map<String, Method> handlerMapping = new HashMap<String, Method>();
 
+    private MyViewResolver myViewResolver;
     @Override
     public void init(ServletConfig config) throws ServletException {
         scanController(config);
@@ -85,6 +90,65 @@ public class MyDispatchServlet extends HttpServlet{
     }
     // 加载自定义试图解析器
     public void loadViewResolver(ServletConfig config) {
-        
+        SAXReader reader = new SAXReader();
+
+        try {
+            // 解析 springmvc.xml
+            String path = config.getServletContext().getRealPath("") + "\\WEB-INF\\classes\\" + config.getInitParameter("contextConfigLocation");
+            Document document = reader.read(path);
+            Element root = document.getRootElement();
+            Iterator iter = root.elementIterator();
+            while(iter.hasNext()) {
+                Element ele = (Element) iter.next();
+                if (ele.getName().equals("bean")) {
+                    String className = ele.attributeValue("class");
+                    Class clazz = Class.forName(className);
+                    Object obj = clazz.newInstance();
+                    Method prefixMethod = clazz.getMethod("setPrefix", String.class);
+                    Method suffixMethod = clazz.getMethod("setSuffix", String.class);
+                    Iterator beanIter = ele.elementIterator();
+                    Map<String, String> propertyMap = new HashMap<String, String>();
+                    while(beanIter.hasNext()) {
+                        Element beanEle = (Element) beanIter.next();
+                        String name = beanEle.attributeValue("name");
+                        String value = beanEle.attributeValue("value");
+                        propertyMap.put(name, value);
+                    }
+                    for(String str:propertyMap.keySet()) {
+                        if (str.equals("prefix")) {
+                            prefixMethod.invoke(obj, propertyMap.get(str));
+                        }
+                        if (str.equals("suffix")) {
+                            suffixMethod.invoke(obj, propertyMap.get(str));
+                        }
+                    }
+                    myViewResolver = (MyViewResolver) obj;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doPost(request, response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String handlerUri = request.getRequestURI().split("/")[2];
+
+        Object obj = iocContainer.get(handlerUri);
+
+        String methodUri = request.getRequestURI().split("/")[3];
+        Method method = handlerMapping.get(methodUri);
+        try {
+            String value = (String) method.invoke(obj);
+            String result = myViewResolver.jspMapping(value);
+            request.getRequestDispatcher(result).forward(request, response);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
