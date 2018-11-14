@@ -34,18 +34,18 @@ public class MyDispatchServlet extends HttpServlet{
 
     public void scanController(ServletConfig config) {
         SAXReader reader = new SAXReader();
-        System.out.println(config.getInitParameter("contextConfigLocation"));
         try {
-            String path = config.getServletContext().getRealPath("") + "\\WEB-INF\\"+config.getInitParameter("contextConfigLocation");
+            String path = config.getServletContext().getRealPath("") + config.getInitParameter("contextConfigLocation");
             Document document = reader.read(path);
             Element root = document.getRootElement();
             Iterator iter = root.elementIterator();
             while(iter.hasNext()) {
                 Element ele = (Element) iter.next();
                 if (ele.getName().equals("component-scan")) {
-                    String packageName = ele.attributeValue("base-package");
+                    String packageName = ele.attributeValue("base-package") + ".controller";
                     // 获取包下所有的类名
                     List<String> list = getClassNames(packageName);
+                    System.out.println(list);
                     for(String str : list) {
                         Class clazz = Class.forName(str);
                         if (clazz.isAnnotationPresent(MyController.class)) {
@@ -96,7 +96,7 @@ public class MyDispatchServlet extends HttpServlet{
 
         try {
             // 解析 springmvc.xml
-            String path = config.getServletContext().getRealPath("") + "\\WEB-INF\\" + config.getInitParameter("contextConfigLocation");
+            String path = config.getServletContext().getRealPath("") + config.getInitParameter("contextConfigLocation");
             Document document = reader.read(path);
             Element root = document.getRootElement();
             Iterator iter = root.elementIterator();
