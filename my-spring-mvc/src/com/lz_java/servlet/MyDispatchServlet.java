@@ -28,13 +28,15 @@ public class MyDispatchServlet extends HttpServlet{
     @Override
     public void init(ServletConfig config) throws ServletException {
         scanController(config);
+        initHandlerMapping();
+        loadViewResolver(config);
     }
 
     public void scanController(ServletConfig config) {
         SAXReader reader = new SAXReader();
-
+        System.out.println(config.getInitParameter("contextConfigLocation"));
         try {
-            String path = config.getServletContext().getRealPath("") + "\\WEB-INF\\classes\\"+config.getInitParameter("contextConfigLocation");
+            String path = config.getServletContext().getRealPath("") + "\\WEB-INF\\"+config.getInitParameter("contextConfigLocation");
             Document document = reader.read(path);
             Element root = document.getRootElement();
             Iterator iter = root.elementIterator();
@@ -94,7 +96,7 @@ public class MyDispatchServlet extends HttpServlet{
 
         try {
             // 解析 springmvc.xml
-            String path = config.getServletContext().getRealPath("") + "\\WEB-INF\\classes\\" + config.getInitParameter("contextConfigLocation");
+            String path = config.getServletContext().getRealPath("") + "\\WEB-INF\\" + config.getInitParameter("contextConfigLocation");
             Document document = reader.read(path);
             Element root = document.getRootElement();
             Iterator iter = root.elementIterator();
