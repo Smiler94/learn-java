@@ -32,30 +32,40 @@ public class MyDispatchServlet extends HttpServlet{
         loadViewResolver(config);
     }
 
+    // 扫描控制器
     public void scanController(ServletConfig config) {
         SAXReader reader = new SAXReader();
         try {
+            // 获取配置文件的路径
             String path = config.getServletContext().getRealPath("") + config.getInitParameter("contextConfigLocation");
+            // 开始解析
             Document document = reader.read(path);
             Element root = document.getRootElement();
+            // 从根节点开始
             Iterator iter = root.elementIterator();
             while(iter.hasNext()) {
                 Element ele = (Element) iter.next();
+                // 节点名称为component-scan
                 if (ele.getName().equals("component-scan")) {
+                    // 获取控制器存放的目录
                     String packageName = ele.attributeValue("base-package") + ".controller";
                     // 获取包下所有的类名
                     List<String> list = getClassNames(packageName);
-                    System.out.println(list);
                     for(String str : list) {
                         Class clazz = Class.forName(str);
+                        // 检查是否包含有MyController 注解
                         if (clazz.isAnnotationPresent(MyController.class)) {
+                            // 控制器对应的 RequestMapping注解
                             MyRequestMapping annotation = (MyRequestMapping) clazz.getAnnotation(MyRequestMapping.class);
-                            String value = annotation.value().substring(1);
+                            // 获取注解名
+                            String value = annotation.value().substring(1);// 去掉左边的/
+                            // 存放到ioc 容器中
                             iocContainer.put(value, clazz.newInstance());
                         }
                     }
                 }
             }
+            System.out.println(iocContainer);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -63,6 +73,7 @@ public class MyDispatchServlet extends HttpServlet{
     // 获取包下所有的类名
     public List<String> getClassNames(String packageName) {
         List<String> classNameList = new ArrayList<String>();
+        // 包名转化为目录名
         String packagePath = packageName.replace(".", "/");
         ClassLoader loader = Thread.currentThread().getContextClassLoader();
         URL url = loader.getResource(packagePath);
@@ -78,17 +89,23 @@ public class MyDispatchServlet extends HttpServlet{
     }
     // 初始化 handler 映射
     public void initHandlerMapping() {
+        // 解析扫描到的控制器中的方法
         for(String str : iocContainer.keySet()) {
             Class clazz = iocContainer.get(str).getClass();
+            // 获取控制器的所有方法
             Method[] methods = clazz.getMethods();
             for (Method method : methods) {
+                // 是否包含有MyRequestMapping 注解
                 if (method.isAnnotationPresent(MyRequestMapping.class)) {
                     MyRequestMapping annotation = method.getAnnotation(MyRequestMapping.class);
+                    // 获取注解名
                     String value = annotation.value().substring(1);
+                    // 存放到处理方法的容器
                     handlerMapping.put(value, method);
                 }
             }
         }
+        System.out.println(handlerMapping);
     }
     // 加载自定义试图解析器
     public void loadViewResolver(ServletConfig config) {
@@ -139,11 +156,11 @@ public class MyDispatchServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String handlerUri = request.getRequestURI().split("/")[2];
-
+        String handlerUri = request.getRequestURI().split("/")[1];
+        System.out.println(handlerUri);
         Object obj = iocContainer.get(handlerUri);
 
-        String methodUri = request.getRequestURI().split("/")[3];
+        String methodUri = request.getRequestURI().split("/")[2];
         Method method = handlerMapping.get(methodUri);
         try {
             String value = (String) method.invoke(obj);
