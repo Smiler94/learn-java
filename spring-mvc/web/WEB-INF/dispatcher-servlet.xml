@@ -25,4 +25,6 @@
         </property>
     </bean>
     <mvc:annotation-driven conversion-service="conversionService"/>
+
+    <bean id="courseDAO" class="com.lz_java.dao.CourseDAO"/>
 </beans>
