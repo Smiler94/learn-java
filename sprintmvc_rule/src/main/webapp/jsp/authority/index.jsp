@@ -70,15 +70,7 @@
     </div>
     <div class="layui-body">
         <div style="padding:15px">
-            <table class="layui-table" lay-data="{width:892, height:483, url:'authority/getAll', page:true, id:'idTest}" lay-filter="demo">
-                <thead>
-                <tr>
-                    <th lay-data="{type:'checkbox',fixed:'left'}"></th>
-                    <th lay-data="{field:'id',sort: true, fixed:true}">ID</th>
-                    <th lay-data="{field:'name'}">权限名</th>
-                    <th lay-data="{fixed: 'right', width:178, align:'center', toolbar: '#barDemo'}"></th>
-                </tr>
-                </thead>
+            <table class="layui-table" id="authority_table" lay-filter="demo">
             </table>
             <script type="text/html" id="barDemo">
                 <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
@@ -93,6 +85,33 @@
 <script>
     layui.use('element', function() {
         var element = layui.element;
+    })
+
+    layui.use('table', function() {
+        var table = layui.table;
+
+        table.render({
+            elem: '#authority_table',
+            url: '/authority/getAll',
+            cols: [[
+                {type:'checkbox',fixed:'left'},
+                {field:'id',sort: true, fixed:true, title:'ID'},
+                {field:'name', title:'权限名'},
+                {fixed: 'right', width:178, align:'center', toolbar: '#barDemo', title:'操作'}
+            ]]
+        })
+
+        table.on('tool(demo)', function(obj) {
+            var data = obj.data;
+
+            if (obj.event==='del') {
+                layer.confirm('确定删除吗？', function (index) {
+                    window.location.href= 'deleteById/' + data.id;
+                })
+            } else if (obj.event === 'edit') {
+                window.location.href = 'findById/' + data.id;
+            }
+        })
     })
 </script>
 </body>

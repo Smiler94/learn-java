@@ -8,10 +8,8 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -30,7 +28,7 @@ public class AuthorityController {
     @PostMapping("/add")
     public String add(Authority authority) {
         authorityRepository.save(authority);
-        return "redirect:/add";
+        return "redirect:/authority/add";
     }
 
     @GetMapping("/getAll")
@@ -48,5 +46,27 @@ public class AuthorityController {
     @GetMapping("/index")
     public String list() {
         return "authority/index";
+    }
+
+    @GetMapping("findById/{id}")
+    public ModelAndView findById(@PathVariable(value="id") String id) {
+        Authority authority = authorityRepository.findById(id);
+        ModelAndView modelAndView = new ModelAndView();
+
+        modelAndView.setViewName("authority/update");
+        modelAndView.addObject(authority);
+        return modelAndView;
+    }
+
+    @PostMapping("update")
+    public String update(Authority authority) {
+        authorityRepository.save(authority);
+        return "redirect:/authority/index";
+    }
+
+    @GetMapping("deleteById/{id}")
+    public String delete(String id) {
+        authorityRepository.deleteById(id);
+        return "redirect:/authority/index";
     }
 }

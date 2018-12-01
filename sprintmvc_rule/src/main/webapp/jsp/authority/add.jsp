@@ -47,7 +47,7 @@
                     <li class="layui-nav-item layui-nav-itemed">
                         <a href="javascript:;">权限管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="/authority/list">查询权限</a></dd>
+                            <dd><a href="/authority/index">查询权限</a></dd>
                             <dd class="layui-this"><a href="/authority/add">添加权限</a></dd>
                         </dl>
                     </li>
@@ -70,7 +70,7 @@
         </div>
         <div class="layui-body">
             <div style="padding:15px">
-                <form action="authority/add" class="layui-form" method="post">
+                <form action="/authority/add" class="layui-form" method="post">
                     <div class="layui-form-item">
                         <label for="name" class="layui-form-label">权限名</label>
                         <div class="layui-input-inline" style="width:300px">
@@ -88,5 +88,10 @@
             </div>
         </div>
     </div>
+    <script>
+        layui.use('element', function() {
+            var element = layui.element;
+        })
+    </script>
 </body>
 </html>
