@@ -55,14 +55,14 @@
                     <a href="javascript:;">角色管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="/role/list">查询角色</a></dd>
-                        <dd class="layui-this"><a href="/role/add">添加角色</a></dd>
+                        <dd><a href="/role/add">添加角色</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
                     <a href="javascript:;">用户管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="/user/list">查询用户</a></dd>
-                        <dd class="layui-this"><a href="/user/add">添加用户</a></dd>
+                        <dd><a href="/user/add">添加用户</a></dd>
                     </dl>
                 </li>
             </ul>
