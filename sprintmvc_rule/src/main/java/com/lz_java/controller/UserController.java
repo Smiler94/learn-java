@@ -15,13 +15,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 @Controller
 @RequestMapping("user")
-public class UserController {
+public class UserController extends BaseController {
     @Autowired
     private RoleRepository roleRepository;
 
@@ -29,8 +30,8 @@ public class UserController {
     private UserRepository userRepository;
 
     @GetMapping("add")
-    public ModelAndView add() {
-        ModelAndView modelAndView = new ModelAndView();
+    public ModelAndView add(HttpServletRequest request) {
+        ModelAndView modelAndView = getMv(request);
 
         modelAndView.addObject("list", roleRepository.findAll().iterator());
         modelAndView.setViewName("user/add");
@@ -44,8 +45,10 @@ public class UserController {
     }
 
     @GetMapping("index")
-    public String index() {
-        return "user/index";
+    public ModelAndView index(HttpServletRequest request) {
+        ModelAndView modelAndView = getMv(request);
+        modelAndView.setViewName("user/index");
+        return modelAndView;
     }
 
     @GetMapping("getAll")
@@ -62,8 +65,8 @@ public class UserController {
     }
 
     @GetMapping("findById/{id}")
-    public ModelAndView findById(@PathVariable(value = "id") String id) {
-        ModelAndView modelAndView = new ModelAndView();
+    public ModelAndView findById(@PathVariable(value = "id") String id,HttpServletRequest request) {
+        ModelAndView modelAndView = getMv(request);
 
         User user = userRepository.findById(id);
         List<String> myRoles = user.getRoles();

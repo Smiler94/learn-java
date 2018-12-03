@@ -10,15 +10,18 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 @Controller
 @RequestMapping("/role")
-public class RoleController {
+public class RoleController extends BaseController{
     @Autowired
     private RoleRepository roleRepository;
 
@@ -26,8 +29,8 @@ public class RoleController {
     private AuthorityRepository authorityRepository;
 
     @GetMapping("/add")
-    public ModelAndView add() {
-        ModelAndView modelAndView = new ModelAndView();
+    public ModelAndView add(HttpServletRequest request) {
+        ModelAndView modelAndView = getMv(request);
         System.out.println(authorityRepository.findAll().iterator());
         modelAndView.addObject("list", authorityRepository.findAll().iterator());
         modelAndView.setViewName("role/add");
@@ -41,8 +44,10 @@ public class RoleController {
     }
 
     @GetMapping("/index")
-    public String index() {
-        return "role/index";
+    public ModelAndView index(HttpServletRequest request) {
+        ModelAndView modelAndView = getMv(request);
+        modelAndView.setViewName("role/index");
+        return modelAndView;
     }
 
     @GetMapping("/getAll")
@@ -59,8 +64,8 @@ public class RoleController {
     }
 
     @GetMapping("findById/{id}")
-    public ModelAndView findById(@PathVariable(value = "id") String id) {
-        ModelAndView modelAndView = new ModelAndView();
+    public ModelAndView findById(@PathVariable(value = "id") String id,HttpServletRequest request) {
+        ModelAndView modelAndView = getMv(request);
 
         Role role = roleRepository.findById(id);
         modelAndView.addObject("role", role);

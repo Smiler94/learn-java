@@ -11,18 +11,22 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
 @RequestMapping("/authority")
-public class AuthorityController {
+public class AuthorityController extends BaseController{
 
     @Autowired
     private AuthorityRepository authorityRepository;
 
     @GetMapping(value="/add")
-    public String add() {
-        return "authority/add";
+    public ModelAndView add(HttpServletRequest request) {
+        ModelAndView modelAndView = getMv(request);
+        modelAndView.setViewName("authority/add");
+
+        return modelAndView;
     }
 
     @PostMapping("/add")
@@ -44,14 +48,16 @@ public class AuthorityController {
     }
 
     @GetMapping("/index")
-    public String list() {
-        return "authority/index";
+    public ModelAndView list(HttpServletRequest request) {
+        ModelAndView modelAndView = getMv(request);
+        modelAndView.setViewName("authority/index");
+        return modelAndView;
     }
 
     @GetMapping("findById/{id}")
-    public ModelAndView findById(@PathVariable(value="id") String id) {
+    public ModelAndView findById(@PathVariable(value="id") String id,HttpServletRequest request) {
         Authority authority = authorityRepository.findById(id);
-        ModelAndView modelAndView = new ModelAndView();
+        ModelAndView modelAndView = getMv(request);
 
         modelAndView.setViewName("authority/update");
         modelAndView.addObject(authority);

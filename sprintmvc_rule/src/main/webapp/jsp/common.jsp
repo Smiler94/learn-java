@@ -10,7 +10,7 @@
 <%@ taglib prefix="rapid" uri="http://www.rapid-framework.org.cn/rapid"%>
 <%
     String path = request.getContextPath();
-    System.out.println(path);
+//    System.out.println(path);
 %>
 <html>
 <head>
@@ -46,27 +46,26 @@
     <div class="layui-side layui-bg-black">
         <div class="layui-side-scroll">
             <ul class="layui-nav layui-nav-tree">
-                <li class="layui-nav-item">
-                    <a href="javascript:;">权限管理</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="/authority/index">查询权限</a></dd>
-                        <dd><a href="/authority/add">添加权限</a></dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">角色管理</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="/role/index">查询角色</a></dd>
-                        <dd><a href="/role/add">添加角色</a></dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a href="javascript:;">用户管理</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="/user/index">查询用户</a></dd>
-                        <dd class="layui-this"><a href="/user/add">添加用户</a></dd>
-                    </dl>
-                </li>
+                <c:forEach items="${navs}" var="nav" varStatus="status">
+                    <c:if test="${nav.isCurrent}">
+                        <li class="layui-nav-item layui-nav-itemed">
+                    </c:if>
+                    <c:if test="${!nav.isCurrent}">
+                        <li class="layui-nav-item">
+                    </c:if>
+                            <a href="javascript:;">${nav.name}</a>
+                            <dl class="layui-nav-child">
+                                <c:forEach items="${nav.subNavs}" var="subNav">
+                                    <c:if test="${subNav.isCurrent}">
+                                        <dd class="layui-this"><a href="${subNav.uri}">${subNav.name}</a></dd>
+                                    </c:if>
+                                    <c:if test="${!subNav.isCurrent}">
+                                        <dd><a href="${subNav.uri}">${subNav.name}</a></dd>
+                                    </c:if>
+                                </c:forEach>
+                            </dl>
+                        </li>
+                </c:forEach>
             </ul>
         </div>
     </div>
