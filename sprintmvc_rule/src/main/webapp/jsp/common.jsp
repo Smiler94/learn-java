@@ -71,9 +71,9 @@
         </div>
     </div>
     <div class="layui-body">
-        <rapid:override name="content">
+        <rapid:block name="content">
             base content
-        </rapid:override>
+        </rapid:block>
     </div>
 </div>
 <script>
@@ -84,9 +84,9 @@
     layui.use(['form'], function() {
         var form = layui.form;
     })
-    <rapid:override name="script">
-
-    </rapid:override>
 </script>
+<rapid:block name="script">
+
+</rapid:block>
 </body>
 </html>
