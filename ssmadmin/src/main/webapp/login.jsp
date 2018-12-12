@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -9,7 +10,7 @@
     <!-- sweet alert -->
     <link rel="stylesheet" href="plugins/sweetalert/sweetalert.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="dist/css/ionicons.min.css">
     <!-- Theme style -->

@@ -175,7 +175,7 @@ function logout() {
                 swal("你已退出此次登录", {
                     icon: "success",
                 });
-                window.location.href = "login.html";
+                window.location.href = "login.jsp";
             }
         });
 }
@@ -234,7 +234,7 @@ function delCookie(name) {
 function checkCookie() {
     if (getCookie("user") == null) {
         swal("未登录！");
-        window.location.href = "login.html";
+        window.location.href = "login.jsp";
     }
 }
 
