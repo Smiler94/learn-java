@@ -7,23 +7,273 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="397c346f-e524-448b-96cd-360338a90e4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-context-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-context-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-context-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-context-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/classes/spring-context-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/classes/spring-context-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/classes/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/classes/spring-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-admin/dist/js/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-admin/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-context-mvc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-context.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/classes/spring-context-mvc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/classes/spring-context.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/mybatis-3.2.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/mysql-connector-java-5.1.38.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-context-support-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/css/adminlte.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/css/adminlte.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/css/adminlte.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/css/ionicons.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/css/main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/AdminLTELogo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/avatar.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/avatar04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/avatar2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/avatar3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/avatar5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/boxed-bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/boxed-bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/credit/american-express.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/credit/cirrus.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/credit/mastercard.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/credit/mestro.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/credit/paypal.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/credit/paypal2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/credit/visa.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/default-150x150.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/icons.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/logo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/logo3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/photo1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/photo2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/photo3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/photo4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/user1-128x128.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/user2-160x160.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/user3-128x128.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/user4-128x128.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/user5-128x128.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/user6-128x128.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/user7-128x128.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/user8-128x128.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/wxpay.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/img/zhifubao1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/adminlte.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/adminlte.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/adminlte.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/adminlte.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/article.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/demo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/pages/dashboard.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/pages/dashboard2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/pages/dashboard3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/picture.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap-grid.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap-reboot.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap-reboot.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/js/bootstrap.bundle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/js/bootstrap.bundle.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/js/bootstrap.bundle.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/js/bootstrap.bundle.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/js/bootstrap.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/bootstrap/js/bootstrap.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chart.js2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/Chart.bundle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/Chart.bundle.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/Chart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/Chart.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/cartesian/category.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/cartesian/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/cartesian/linear.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/cartesian/logarithmic.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/cartesian/time.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/labelling.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/radial/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/radial/linear.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/axes/styling.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/area.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/bar.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/bubble.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/doughnut.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/line.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/mixed.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/polar.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/radar.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/charts/scatter.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/configuration/animations.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/configuration/elements.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/configuration/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/configuration/layout.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/configuration/legend.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/configuration/title.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/configuration/tooltip.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/developers/api.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/developers/axes.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/developers/charts.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/developers/contributing.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/developers/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/developers/plugins.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/developers/updates.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/colors.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/device-pixel-ratio.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/fonts.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/interactions/events.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/interactions/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/interactions/modes.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/options.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/general/responsive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/getting-started/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/getting-started/installation.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/getting-started/integration.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/getting-started/usage.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-anchorjs/anchor-style.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/Chart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/Chart.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-fontsettings/fontsettings.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-fontsettings/website.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-ga/plugin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-highlight/ebook.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-highlight/website.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-search-plus/search.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-search-plus/search.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-sharing/buttons.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/gitbook.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/images/apple-touch-icon-precomposed-152.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/images/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/gitbook/theme.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/notes/comparison.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/notes/extensions.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/notes/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/notes/license.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/search_plus_index.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/chartjs2/docs/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/css/font-awesome.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/jquery/core.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/jquery/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/jquery/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/jquery/jquery.min.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/jquery/jquery.slim.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/jquery/jquery.slim.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/jquery/jquery.slim.min.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/esm/popper-utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/esm/popper-utils.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/esm/popper-utils.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/esm/popper-utils.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/esm/popper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/esm/popper.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/esm/popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/esm/popper.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/popper-utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/popper-utils.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/popper-utils.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/popper-utils.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/popper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/popper.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/popper.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/umd/popper-utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/umd/popper-utils.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/umd/popper-utils.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/umd/popper-utils.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/umd/popper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/umd/popper.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/umd/popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/plugins/popper/umd/popper.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/public.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/dist/js/user.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/index.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap-grid.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap-reboot.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap-reboot.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/js/bootstrap.bundle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/js/bootstrap.bundle.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/js/bootstrap.bundle.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/js/bootstrap.bundle.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/js/bootstrap.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/bootstrap/js/bootstrap.min.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/jquery/core.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/jquery/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/jquery/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/jquery/jquery.min.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/jquery/jquery.slim.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/jquery/jquery.slim.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/jquery/jquery.slim.min.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/sweetalert/sweetalert.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-admin/plugins/sweetalert/sweetalert.min.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,93 +337,28 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="12">
+              <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lz_java/ssmadmin/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lz_java/ssmadmin/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            <state relative-caret-position="54">
+              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="spring-beans.schema" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -206,13 +391,6 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="455" />
     <option name="y" value="95" />
@@ -221,11 +399,21 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,72 +421,12 @@
               <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssmadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -327,7 +455,82 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="ssm-admin" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.53" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="ssmadmin" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.6" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ssm-admin:war exploded">
@@ -344,8 +547,9 @@
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52359" />
+        <option name="DEBUG_PORT" value="64878" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -392,13 +596,21 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
+      <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="ssm-admin:war exploded" />
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -417,7 +629,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20310000" />
+    <option name="totallyTimeSpent" value="20597000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,41 +641,40 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1858" height="1096" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25472748" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47624075" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32946146" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32946146" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32946146" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32946146" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32946146" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32946146" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,12 +683,38 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/dist/css/adminlte.css.map">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114505" />
+        <state relative-caret-position="243">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
       </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/dist/js/public.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -485,9 +722,6 @@
           <caret line="134" column="35" lean-forward="true" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/spring-context.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="uml://SpringLocalModels/module=ssm-admin">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -509,45 +743,25 @@
           <Categories>
             <Category>Show filesets as groups</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssm-cluster/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ssm-cluster/src/main/webapp/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/plugins/sweetalert/sweetalert.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23868" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/plugins/sweetalert/sweetalert.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/com/lz_java/ssmadmin/controller/TestController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#509#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-23868">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/ssm-admin/WEB-INF/classes/spring-context-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/lz_java/ssmadmin/controller/TestController.class" />
     <entry file="file://$PROJECT_DIR$/target/ssm-admin/WEB-INF/classes/spring-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -560,28 +774,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lz_java/ssmadmin/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-          </folding>
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -589,42 +795,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/ssm-admin/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/ssm-admin/login.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="12">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="54">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -634,11 +828,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>ssm-admin:war exploded</last-edited>
+          <last-edited>ssm-admin:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4045977" />
+                <option value="0.2" />
                 <option value="0.5" />
               </list>
             </option>
@@ -651,7 +845,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4045977" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -659,7 +853,6 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>servlet-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -683,11 +876,24 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|ssm-admin</last-edited>
+          <last-edited>ssm-admin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4045977" />
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -699,7 +905,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4045977" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
