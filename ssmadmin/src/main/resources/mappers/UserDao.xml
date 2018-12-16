@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mapper namespace="com.lz_java.ssmadmin.dao.UserDao">
+    <resultMap type="com.lz_java.ssmadmin.entity.User" id="UserResult">
+        <result property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="password" column="password"/>
+        <result property="roleName" column="role_name"/>
+    </resultMap>
+
+    <select id="login" parameterType="com.lz_java.ssmadmin.entity.User" resultMap="UserResult">
+        select id,user_name,password,role_name from
+        ssm_user where user_name=#{userName} and password=#{password} limit 1
+    </select>
+</mapper>

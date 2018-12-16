@@ -32,6 +32,11 @@
 
     <servlet-mapping>
         <servlet-name>default</servlet-name>
-        <url-pattern>*.(js|css|png|gif|eot|svg|ttf|woff)</url-pattern>
+        <url-pattern>/dist/*</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/plugins/*</url-pattern>
+    </servlet-mapping>
+    <!--(js|css|png|gif|eot|svg|ttf|woff)-->
 </web-app>
