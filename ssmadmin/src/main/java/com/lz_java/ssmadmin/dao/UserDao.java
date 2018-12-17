@@ -1,4 +1,7 @@
 package com.lz_java.ssmadmin.dao;
 
-public class UserDao {
+import com.lz_java.ssmadmin.entity.User;
+
+public interface UserDao {
+    User login(User user);
 }
