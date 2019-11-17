@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.demo.dao.AreaDao">
+    <select id="queryArea" resultType="com.imooc.demo.entity.Area">
+        SELECT * FROM tb_area ORDER BY priority DESC
+    </select>
+    <select id="queryByAreaId" resultType="com.imooc.demo.entity.Area">
+        select * from tb_area where area_id=#{areaId}
+    </select>
+    <insert id="insertArea" useGeneratedKeys="true" keyProperty="areaId" keyColumn="area_id" parameterType="com.imooc.demo.entity.Area">
+        INSERT INTO tb_area(area_name, priority, create_time, last_update_time)
+        VALUES (#{areaName}, #{priority}, #{createTime}, #{lastUpdateTime})
+    </insert>
+    <update id="updataArea" parameterType="com.imooc.demo.entity.Area">
+        update tb_area
+        <set>
+            <if test="areaName!=null">area_name=#{areaName},</if>
+            <if test="priority!=null">priority=#{priority}</if>
+            <if test="lastUpdateTime!=null">last_update_time=#{last_update_time}</if>
+        </set>
+        where area_id=#{areaId}
+    </update>
+    <delete id="deleteArea">
+        delete from tb_area
+        where area_id=#{areaId}
+    </delete>
+</mapper>
