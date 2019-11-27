@@ -17,5 +17,13 @@ public class Demo04MultiMethod {
 
         // 编译看左边，左边是Fu，Fu当中没有methodZi方法，所以编译报错
 //        obj.methodZi(); // 错误写法
+
+        // 向下转型
+        System.out.println(obj instanceof Fu);
+        Zi zi = (Zi) obj;
+        System.out.println(zi.num);
+        zi.methodZi();
+
+
     }
 }
